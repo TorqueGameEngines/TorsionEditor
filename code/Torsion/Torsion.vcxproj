@@ -52,7 +52,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(WXWIN28)\lib\mswd;$(WXWIN28)\include\msvc;$(WXWIN28)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WXWIN305)\lib\mswd;$(WXWIN305)\include\msvc;$(WXWIN305)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__WXDEBUG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -60,11 +60,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4838;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>comctl32.lib;wxbase26d.lib;wxmsw26d_core.lib;wxmsw26d_adv.lib;wxbase26d_net.lib;wxmsw26d_stc.lib;wxmsw27d_propgrid.lib;wxregexd.lib;wxjpegd.lib;Ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)torsion_d.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(WXWIN28)\lib\mswd;$(WXWIN28)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(WXWIN305)\lib\mswd;$(WXWIN305)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)torsion_d.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
@@ -80,17 +81,18 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(WXWIN28)\lib\msw;$(WXWIN28)\include\msvc;$(WXWIN28)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WXWIN305)\lib\msw;$(WXWIN28)\include\msvc;$(WXWIN305)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4838;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>comctl32.lib;wxbase26.lib;wxmsw26_core.lib;wxmsw26_adv.lib;wxbase26_net.lib;wxmsw26_stc.lib;wxmsw27_propgrid.lib;wxregex.lib;wxjpeg.lib;Ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)torsion.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(WXWIN28)\lib\msw;$(WXWIN28)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(WXWIN305)\lib\msw;$(WXWIN305)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)torsion.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
