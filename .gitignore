@@ -149,3 +149,4 @@ code/Torsion/.vs/
 *.tlog
 code/Torsion/Debug/
 *.obj
+media/
