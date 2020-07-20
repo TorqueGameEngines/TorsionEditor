@@ -14,17 +14,20 @@
     <ProjectGuid>{6A1EC3A9-9AB3-4F16-B983-0145510FD809}</ProjectGuid>
     <RootNamespace>Torsion</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -43,6 +46,7 @@
     <OutDir>..\..\Media\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <ReferencePath>$(WXWIN305)\include;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\..\Media\</OutDir>
@@ -63,7 +67,7 @@
       <DisableSpecificWarnings>4996; 4838;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>comctl32.lib;wxbase26d.lib;wxmsw26d_core.lib;wxmsw26d_adv.lib;wxbase26d_net.lib;wxmsw26d_stc.lib;wxmsw27d_propgrid.lib;wxregexd.lib;wxjpegd.lib;Ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comctl32.lib;Ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)torsion_d.exe</OutputFile>
       <AdditionalLibraryDirectories>$(WXWIN305)\lib\mswd;$(WXWIN305)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -180,6 +184,7 @@
     <ClInclude Include="ShellMenu.h" />
     <ClInclude Include="shNotebook.h" />
     <ClInclude Include="StackDump.h" />
+    <ClInclude Include="tinyxml2.h" />
     <ClInclude Include="ToolCommand.h" />
     <ClInclude Include="TorsionApp.h" />
     <ClInclude Include="tsComboBox.h" />
@@ -261,6 +266,7 @@
     <ClCompile Include="ShellMenu.cpp" />
     <ClCompile Include="shNotebook.cpp" />
     <ClCompile Include="StackDump.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
     <ClCompile Include="ToolCommand.cpp" />
     <ClCompile Include="TorsionApp.cpp" />
     <ClCompile Include="tsComboBox.cpp" />

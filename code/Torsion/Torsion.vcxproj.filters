@@ -279,6 +279,9 @@
     <ClInclude Include="BuildVersion.h" />
     <ClInclude Include="Identifiers.h" />
     <ClInclude Include="PreCompiled.h" />
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AutoCompClass.cpp">
@@ -517,6 +520,9 @@
     </ClCompile>
     <ClCompile Include="VSMenuItem.cpp">
       <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

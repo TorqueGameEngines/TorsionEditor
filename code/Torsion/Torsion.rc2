@@ -9,7 +9,7 @@
 #include "BuildVersion.h"
 
 //#define wxUSE_NO_MANIFEST 1
-#include "wx/msw/wx.rc"
+//#include "wx/msw/wx.rc"
 
 TORSIONLOGO BITMAP "about.bmp"
 TORSIONUPSELL BITMAP "register.bmp"
