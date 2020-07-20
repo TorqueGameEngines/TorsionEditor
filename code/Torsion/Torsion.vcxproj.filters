@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Autocomp">
+      <UniqueIdentifier>{b576366e-a03b-4ad6-a2f8-14400b206e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{54884d2d-a05d-440d-862a-28cda88be343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppDocView">
+      <UniqueIdentifier>{12e67537-4eed-4220-be94-162b59bd52fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{e2e415d5-68cf-456a-89db-2b3a37aa9dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debugger">
+      <UniqueIdentifier>{b783920a-2604-4afd-b45c-528cf0472ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Find">
+      <UniqueIdentifier>{8940d364-9b8c-4e3c-b7ca-9f8294be4d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{fc8aa4ed-b5c9-4c3f-9923-683e03615891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{74c1ec1c-e642-4710-a2f8-256f9f44685e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{8f87f2a1-0cc1-477a-a789-6804c0339116}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoComp.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompClass.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompData.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompExports.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompFunction.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompManager.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompPage.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompText.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompThread.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompUtil.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCompVar.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildExportsThread.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="CallTipInfo.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptScanner.h">
+      <Filter>Autocomp</Filter>
+    </ClInclude>
+    <ClInclude Include="Icons.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientWindow.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="DocManager.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectConfig.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectDoc.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectView.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptDoc.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptFrame.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptPrintout.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptView.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCommand.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="TorsionApp.h">
+      <Filter>AppDocView</Filter>
+    </ClInclude>
+    <ClInclude Include="AppPrefs.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourHLS.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DirWatcher.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTypeImageList.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWatcher.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="StackDump.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateChecker.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlFile.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Bookmark.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Breakpoint.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugger.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionCall.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiler.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchVar.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="FindInFilesDlg.h">
+      <Filter>Find</Filter>
+    </ClInclude>
+    <ClInclude Include="FindReplaceDlg.h">
+      <Filter>Find</Filter>
+    </ClInclude>
+    <ClInclude Include="FindResultsCtrl.h">
+      <Filter>Find</Filter>
+    </ClInclude>
+    <ClInclude Include="FindSymbolDlg.h">
+      <Filter>Find</Filter>
+    </ClInclude>
+    <ClInclude Include="FindThread.h">
+      <Filter>Find</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointsPanel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeBrowserCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeBrowserPanel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputPanel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectPanel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollMapCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="shNotebook.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tsComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tsMenuBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tsSashLayoutWindow.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tsStatusBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tsToolBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointPropertyDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildExportsDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalToolsDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="GotoDefDialog.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ReloadFile.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DirWatcherWin9x.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="DirWatcherWinNT.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellMenu.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="tsMenu.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="tsShellExecute.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="VSMenuItem.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildVersion.h" />
+    <ClInclude Include="Identifiers.h" />
+    <ClInclude Include="PreCompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoCompClass.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompData.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompExports.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompFunction.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompManager.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompPage.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompText.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompThread.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCompVar.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildExportsThread.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="CallTipInfo.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptScanner.cpp">
+      <Filter>Autocomp</Filter>
+    </ClCompile>
+    <ClCompile Include="Icons.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientWindow.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="DocManager.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectConfig.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectDoc.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectView.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptDoc.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptFrame.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptPrintout.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptView.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCommand.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="TorsionApp.cpp">
+      <Filter>AppDocView</Filter>
+    </ClCompile>
+    <ClCompile Include="AppPrefs.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourHLS.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DirWatcher.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTypeImageList.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWatcher.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="StackDump.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateChecker.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlFile.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Bookmark.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Breakpoint.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugger.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionCall.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiler.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchVar.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="FindInFilesDlg.cpp">
+      <Filter>Find</Filter>
+    </ClCompile>
+    <ClCompile Include="FindReplaceDlg.cpp">
+      <Filter>Find</Filter>
+    </ClCompile>
+    <ClCompile Include="FindResultsCtrl.cpp">
+      <Filter>Find</Filter>
+    </ClCompile>
+    <ClCompile Include="FindSymbolDlg.cpp">
+      <Filter>Find</Filter>
+    </ClCompile>
+    <ClCompile Include="FindThread.cpp">
+      <Filter>Find</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointsPanel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeBrowserCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeBrowserPanel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputPanel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectPanel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollMapCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="shNotebook.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="tsComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="tsMenuBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="tsSashLayoutWindow.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="tsStatusBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="tsToolBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointPropertyDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildExportsDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalToolsDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GotoDefDialog.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ReloadFile.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DirWatcherWin9x.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="DirWatcherWinNT.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformWin.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellMenu.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="tsMenu.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="tsShellExecute.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="VSMenuItem.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\torque_script.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="icons\torsion.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="icons\torsion_project.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Torsion.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Torsion.rc2">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\docs\ChangeLog.txt" />
+  </ItemGroup>
+</Project>
