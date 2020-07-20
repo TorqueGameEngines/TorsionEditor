@@ -4,6 +4,7 @@
 
 #include "PreCompiled.h"
 #include "FileWatcher.h"
+#include "wx\msw\private.h"
 
 
 #ifdef _DEBUG 

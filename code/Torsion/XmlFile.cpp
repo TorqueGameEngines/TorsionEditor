@@ -21,7 +21,8 @@ XmlFile::XmlFile() : XMLDocument()
 
 XmlFile::XmlFile(const wxChar* buffer)
 {
-	XMLDocument().LoadFile(buffer);
+	
+	XMLDocument().LoadFile(convertToAscii(buffer));
 }
 
 wxString XmlFile::GetStringElem(const wxString& name, const wxString& value)
@@ -182,6 +183,28 @@ wxString XmlFile::PointToString(const wxPoint& value)
 	wxString result;
 	result << value.x << " " << value.y;
 	return result;
+}
+
+wxChar *  XmlFile::convertToUnicode(const char * c)
+{
+
+	const size_t cSize = strlen(c) + 1;
+	wchar_t* wc = new wchar_t[cSize];
+	mbstowcs(wc, c, cSize);
+
+	return wc;
+}
+
+char * XmlFile::convertToAscii(const wxChar * str)
+{
+
+	char * buffer = new char[sizeof(str) + 1];
+	int ret;
+
+	ret = wcstombs(buffer, str, sizeof(buffer));
+	buffer[sizeof(buffer)] = '\0';
+
+	return buffer;
 }
 
 int XmlFile::GetArrayStringElems(wxArrayString& output, const wxString& name, const wxString& elemName)

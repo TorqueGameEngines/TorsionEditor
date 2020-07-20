@@ -176,7 +176,7 @@ bool ScriptCtrl::LoadFile( const wxString& filename )
    if ( TextBuffer )
    {
       TextBuffer->Lock();
-      GetTextRangeRaw( TextBuffer->GetWriteBuf( GetTextLength() ), 0, -1 );
+      GetTextRangeRaw(  0, GetTextLength());
       TextBuffer->Unlock();
    }
 
@@ -278,7 +278,7 @@ bool ScriptCtrl::SaveFile( const wxString& filename )
    if ( TextBuffer )
    {
       TextBuffer->Lock();
-      GetTextRangeRaw( TextBuffer->GetWriteBuf( GetTextLength() ), 0, -1 );
+	  GetTextRangeRaw(0, GetTextLength());
       TextBuffer->Unlock();
    }
 
@@ -550,7 +550,7 @@ void ScriptCtrl::OnTextChanged( wxStyledTextEvent& event )
                      ( last->GetPosition() + last->GetText().Len() ) == event.GetPosition() ) 
          {
             //last->SetPosition( event.GetPosition() );
-            last->GetTextRef() << event.GetText();
+            last->SetText(event.GetText());
             add = false;
          }
       }
@@ -1451,7 +1451,7 @@ void ScriptCtrl::OnHoverStart( wxStyledTextEvent& event )
    // so we need to test for that here.
    wxPoint pt = wxGetMousePosition();
    ScreenToClient( &pt.x, &pt.y );
-   if ( !GetClientRect().Inside( pt ) )
+   //if ( !GetClientRect().Inside( pt ) )
       return;
 
    // Cancel the current tip... if any.
@@ -2440,13 +2440,13 @@ void ScriptCtrl::OnContextMenu( wxContextMenuEvent& event )
 
    wxPoint pt = event.GetPosition();
    ScreenToClient( &pt.x, &pt.y );
-   if ( !GetClientRect().Inside( pt ) )
-   {
+   //if ( !GetClientRect().Inside( pt ) )
+   //{
       // Gotta skip else the MDIDocChildFrame won't
       // get it's context menu event.
-      event.Skip(); 
-      return;
-   }
+   //   event.Skip(); 
+   //   return;
+   //}
 
    const int clickPos = PositionFromPoint( pt );
    const int clickLine = LineFromPosition( clickPos );

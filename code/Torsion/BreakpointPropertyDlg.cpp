@@ -273,7 +273,7 @@ void BreakpointPropertyDlg::OnBrowseClick( wxCommandEvent& event )
    wxFileName file( project->MakeAbsoluteTo( m_File->GetLabel() ) );
 
 
-   wxFileDialog dlg( this, "Select A TorqueScript", file.GetPath(), file.GetFullName(), fileFilter, wxOPEN | wxFILE_MUST_EXIST );
+   wxFileDialog dlg( this, "Select A TorqueScript", file.GetPath(), file.GetFullName(), fileFilter, wxFD_OPEN | wxFD_FILE_MUST_EXIST );
    if ( dlg.ShowModal() == wxID_OK ) {
 
       m_File->SetLabel( project->MakeReleativeTo( dlg.GetPath() ) );
@@ -312,7 +312,8 @@ void BreakpointPropertyDlg::OnOkClick( wxCommandEvent& event )
    }
 
    *m_Breakpoint = newBp;
-   wxDialog::OnOK( event );
+  // wxDialog::OnOK( event );
+   event.Skip();
 }
 
 

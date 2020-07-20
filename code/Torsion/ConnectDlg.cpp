@@ -135,7 +135,8 @@ void ConnectDlg::OnCancel( wxCommandEvent& event )
    else 
    {
       // Close the dialog.
-      wxDialog::OnCancel( event );
+      wxDialog::Close( );
+
    }
 }
 

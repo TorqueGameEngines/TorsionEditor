@@ -516,7 +516,7 @@ void ExternalToolsDlg::OnCmdMenuClick( wxCommandEvent& event )
       wxString path = wxFileSelector( "Choose a command executable", 
          cmd, wxEmptyString, wxEmptyString, 
          "All Executables (*.exe;*.com;*.pif;*.bat;*.cmd)|*.exe;*.com;*.pif;*.bat;*.cmd|All Files (*.*)|*.*",
-         wxOPEN | wxFILE_MUST_EXIST, this );
+         wxFD_OPEN | wxFD_FILE_MUST_EXIST, this );
       
       if ( path.IsEmpty() )
          return;

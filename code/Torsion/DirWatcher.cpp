@@ -29,9 +29,9 @@ bool DirWatcher::SetWatch( const wxString& dir, int flags, const wxArrayString& 
 {
    #ifdef __WXMSW__
 
-      if ( wxGetOsVersion() == wxWINDOWS_NT )
-         m_Impl = new DirWatcherWinNT( 65536 );
-      else
+      //if ( wxGetOsVersion() == wxWINDOWS_NT )
+      //   m_Impl = new DirWatcherWinNT( 65536 );
+      //else
          m_Impl = new DirWatcherWin9x;
 
    #else
